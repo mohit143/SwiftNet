@@ -11,6 +11,10 @@
 		E31F2DEC2C372EF500FB0121 /* SwiftNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E31F2DE12C372EF500FB0121 /* SwiftNet.framework */; };
 		E31F2DF12C372EF500FB0121 /* SwiftNetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31F2DF02C372EF500FB0121 /* SwiftNetTests.swift */; };
 		E31F2DF22C372EF500FB0121 /* SwiftNet.h in Headers */ = {isa = PBXBuildFile; fileRef = E31F2DE42C372EF500FB0121 /* SwiftNet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E31F2DFC2C37B10600FB0121 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31F2DFB2C37B10600FB0121 /* NetworkProtocol.swift */; };
+		E31F2DFE2C37B12500FB0121 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31F2DFD2C37B12500FB0121 /* HttpMethod.swift */; };
+		E31F2E002C37B14C00FB0121 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31F2DFF2C37B14C00FB0121 /* Network.swift */; };
+		E31F2E022C37B1BF00FB0121 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31F2E012C37B1BF00FB0121 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		E31F2DE52C372EF500FB0121 /* SwiftNet.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SwiftNet.docc; sourceTree = "<group>"; };
 		E31F2DEB2C372EF500FB0121 /* SwiftNetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftNetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E31F2DF02C372EF500FB0121 /* SwiftNetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNetTests.swift; sourceTree = "<group>"; };
+		E31F2DFB2C37B10600FB0121 /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		E31F2DFD2C37B12500FB0121 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		E31F2DFF2C37B14C00FB0121 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		E31F2E012C37B1BF00FB0121 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,10 @@
 			children = (
 				E31F2DE42C372EF500FB0121 /* SwiftNet.h */,
 				E31F2DE52C372EF500FB0121 /* SwiftNet.docc */,
+				E31F2DFB2C37B10600FB0121 /* NetworkProtocol.swift */,
+				E31F2DFD2C37B12500FB0121 /* HttpMethod.swift */,
+				E31F2DFF2C37B14C00FB0121 /* Network.swift */,
+				E31F2E012C37B1BF00FB0121 /* NetworkError.swift */,
 			);
 			path = SwiftNet;
 			sourceTree = "<group>";
@@ -194,7 +206,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E31F2DFC2C37B10600FB0121 /* NetworkProtocol.swift in Sources */,
+				E31F2DFE2C37B12500FB0121 /* HttpMethod.swift in Sources */,
+				E31F2E002C37B14C00FB0121 /* Network.swift in Sources */,
 				E31F2DE62C372EF500FB0121 /* SwiftNet.docc in Sources */,
+				E31F2E022C37B1BF00FB0121 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +372,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -388,6 +405,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -409,6 +427,7 @@
 		E31F2DF92C372EF500FB0121 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -424,6 +443,7 @@
 		E31F2DFA2C372EF500FB0121 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
